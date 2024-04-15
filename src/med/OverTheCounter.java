@@ -1,7 +1,6 @@
 package med;
 
-public class OverTheCounter {
-
+interface OverTheCounter {
     String getName();
     Boolean Order();
 }

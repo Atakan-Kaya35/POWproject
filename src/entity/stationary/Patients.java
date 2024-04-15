@@ -1,4 +1,4 @@
-package entity.stationary.patients;
+package entity.stationary;
 import java.util.ArrayList;
 
 import grid.City;

@@ -1,6 +1,6 @@
 package med;
 
-import entity.stationary.patients.Patients;
+import entity.stationary.Patients;
 import grid.Order;
 
 public class AcutSickness extends Sickness{

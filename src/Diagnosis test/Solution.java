@@ -49,7 +49,7 @@ public class Solution
     }
 
     /**
-     * Give solution as a string
+     * Give solution as a string, bütün dünya buna inansa
      * @return solution
      */
     public String getSolution()

@@ -2,7 +2,7 @@ package med;
 
 import java.util.ArrayList;
 
-import entity.stationary.patients.Patients;
+import entity.stationary.Patients;
 
 public abstract class Sickness {
     //this is the amount of ticks that should pass before a whole cycle's worth of actions are made

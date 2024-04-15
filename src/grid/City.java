@@ -6,7 +6,6 @@ import entity.mobile.*;
 import entity.mobile.physcian.Nurses;
 import entity.mobile.physcian.Van;
 import entity.stationary.*;
-import entity.stationary.patients.Periodic;
 
 /**
  * Represents a city grid with roads, mobile entities, and stationary entities.
@@ -350,7 +349,7 @@ public String viewMap(boolean showTraffic){
                     else if( roads[i][j].getEnterenceOf() instanceof Pharmacy){
                         secondaryRow.append(" M ");
                     }
-                    else if( roads[i][j].getEnterenceOf() instanceof Periodic){
+                    else if( roads[i][j].getEnterenceOf() instanceof Patients){
                         secondaryRow.append(" P ");
                     }
                     else{

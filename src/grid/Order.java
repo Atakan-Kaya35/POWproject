@@ -1,7 +1,7 @@
 package grid;
 import java.util.*;
 import entity.mobile.physcian.Nurses;
-import entity.stationary.patients.Patients;
+import entity.stationary.Patients;
 import med.Medicine;
 import med.Pill;
 import med.Serum;
@@ -62,10 +62,10 @@ public class Order {
         return this.path;
     }
 
-    public Medicine getCarriedMedication() {
-        return this.carriedMedication;
+/*     public Medicine getCarriedMedication() {
+        return this.getCarriedMedication;
     }
-
+ */
     //setter methods
     public void setAssignedOrder(boolean assigned){
         this.assigned = assigned;
