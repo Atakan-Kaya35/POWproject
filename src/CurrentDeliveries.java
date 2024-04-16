@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 
 public class CurrentDeliveries extends Application{
     public void start(Stage primaryStage) throws IOException{
-       
+        
         FXMLLoader fxml = new FXMLLoader(CurrentDeliveries.class.getResource("CurrentDeliveries.fxml"));
         Scene scene = new Scene(fxml.load(),1080,720);
         primaryStage.setScene(scene);
