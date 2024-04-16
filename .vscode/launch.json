@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CurrentDeliveries",
+            "request": "launch",
+            "mainClass": "CurrentDeliveries",
+            "projectName": "POWproject_a0dc385e"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
