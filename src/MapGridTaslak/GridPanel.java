@@ -5,6 +5,8 @@ import java.awt.*;
 import java.util.*;
 import javax.swing.Timer;
 
+import entity.mobile.physcian.Van;
+
 public class GridPanel extends JComponent
 {
     public final static int calibrationX = 53;
@@ -21,10 +23,7 @@ public class GridPanel extends JComponent
         gridFrame = ref;
         homes = createHomes();
         obstacles = createObstacles();
-        van = new Van(calibrationX, calibrationY);
-
-        
-
+        van = new Van("atakan", 0,0);
 
         listener = new sucu();
         t = new Timer(1000, listener);

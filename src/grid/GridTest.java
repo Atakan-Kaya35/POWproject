@@ -10,7 +10,7 @@ import entity.mobile.physcian.Van;
 public class GridTest {
     public static void main(String[] args) {
         
-        City city = new City(12, 12);
+        /* City city = new City(12, 12);
         Mobile a = new Van("mert");
         city.setRoad(a, 0,0);
         Mobile v = new Van("atakanisko");
@@ -31,7 +31,7 @@ public class GridTest {
             
                 System.out.println(city.wholeWay.get(i).get(0)+ " " + city.wholeWay.get(i).get(1));
                         
-        } // bu a neden acaba...gercek bir gizem -> map printinin gerçekten bittiğini anlamak için bence :)
+        }  */// bu a neden acaba...gercek bir gizem -> map printinin gerçekten bittiğini anlamak için bence :)
 
         //Mutlulukkk a* a kurban olim
     }

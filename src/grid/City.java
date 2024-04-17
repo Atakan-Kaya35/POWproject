@@ -474,7 +474,7 @@ public void createVansAndScooters() {
         int x = random.nextInt(width);
         int y = random.nextInt(height);
         String name = "v" + (i + 1); // Unique name for each van
-        Van van = new Van(name);
+        Van van = new Van(name, 0,0);
         vanList.add(van);
         setRoad(van, x, y);
     }
