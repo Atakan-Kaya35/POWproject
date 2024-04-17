@@ -11,6 +11,10 @@ public class Pill extends Medicine{
     public static ArrayList prescribedPills;
     public int pillID;
 
+    public Pill (boolean initializer){
+        super("try", "try");
+        fillPills();
+    }
     public Pill(int IDnumber){
         super(AllPills.get(IDnumber)[0], AllPills.get(IDnumber)[1]);
         this.pillID = IDnumber;

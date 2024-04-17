@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GridTest",
+            "request": "launch",
+            "mainClass": "grid.GridTest",
+            "projectName": "POWproject_a0dc385e"
+        },
+        {
+            "type": "java",
             "name": "CurrentDeliveries",
             "request": "launch",
             "mainClass": "CurrentDeliveries",
@@ -31,7 +38,7 @@
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "vmArgs": "--module-path javafx-sdk-22/lib --add-modules javafx.controls,javafx.fxml",            
+            "vmArgs": "--module-path javafx-sdk-22/lib --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }

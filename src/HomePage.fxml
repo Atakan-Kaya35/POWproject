@@ -13,8 +13,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePage">
    <children>
-      <MediaView fitHeight="200.0" fitWidth="200.0" layoutX="-8.0" layoutY="-33.0" />
-      <MediaView fitHeight="200.0" fitWidth="200.0" layoutY="167.0" />
+      
       <TextField layoutX="896.0" layoutY="28.0" prefHeight="54.0" prefWidth="366.0" promptText="search for medicine..." style="-fx-border-color: grey;">
          <font>
             <Font size="24.0" />
