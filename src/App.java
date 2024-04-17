@@ -19,8 +19,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import javafx.application.Platform;
 
-
-
 public class App extends Application {
 
     //buttons
@@ -47,13 +45,6 @@ public class App extends Application {
 
     @FXML
     private Button QDTStartButton;
-
-    @FXML
-    private Button QDTNextButton;
-
-    //TODO pop up will be opened and show recomendation
-    @FXML
-    private Button QDTNextButton2;
 
     @FXML
     private Button pillsButton;
@@ -126,14 +117,6 @@ public class App extends Application {
         }); 
 
         QDTStartButton.setOnAction(e -> {
-            primaryStage.setScene(symptomsPage);
-        });
-
-        QDTNextButton.setOnAction(e -> {
-            primaryStage.setScene(yesNoQuestPage);
-        });
-
-        QDTNextButton2.setOnAction(e -> {
             JFrame menuFrame = new Menu();
             menuFrame.setTitle("Pills on Wheels");
             menuFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
