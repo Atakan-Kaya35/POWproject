@@ -296,6 +296,7 @@ public String viewMap(boolean showTraffic){
                 // displaying vehicle
                 if(roads[i][j].getContained() == null){
                     if(roads[i][j].getWasCrossed()){
+                        primaryRow.append(" 0 ");
                         int current = wholeWay.size();
                         wholeWay.add(new ArrayList<Integer>() );
                         wholeWay.get(current).add(i);
