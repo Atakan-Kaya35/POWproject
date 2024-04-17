@@ -8,7 +8,7 @@ public class AcutSickness extends Sickness{
     protected int cyclesLeft;
     private boolean done = false;
     
-    AcutSickness(int cycles, int cycleFrequency, Patients patient, Medicine ... neededMeds) {
+    public AcutSickness(int cycles, int cycleFrequency, Patients patient, Medicine ... neededMeds) {
         super(cycleFrequency, patient, neededMeds);
         this.cyclesLeft = cycles;
 

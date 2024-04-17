@@ -14,6 +14,8 @@ public class Order {
     boolean completed = false;
     ArrayList<int[]> path;
     Medicine carriedMedicine;
+    ArrayList<Serum> carriedSerums;
+    ArrayList<Pill> carriedPills;
     public static ArrayList<Order> assignedOrders = new ArrayList<Order>();
     public static ArrayList<Order> completedOrders = new ArrayList<Order>();
 
@@ -38,6 +40,17 @@ public class Order {
         this.carriedMedicine = new Serum();
     }
 
+    public Order(Patients patient, ArrayList<Medicine> medList){
+        this.startingCord = patient.getCity().findMobile(patient.getCoordinates());
+        this.finishingCord = patient.getCoordinates();
+        for (Medicine med : medList) {
+            if (med instanceof Serum){
+                carriedSerums.add((Serum) med);
+            } else {
+                carriedPills.add((Pill) med);
+            }
+        }
+    }
 
     // manifest order path dolacak??
     
@@ -61,6 +74,15 @@ public class Order {
     public ArrayList<int[]> getPath() {
         return this.path;
     }
+
+    public ArrayList<Serum> getCarriedSerums(){
+        return carriedSerums;
+    }
+
+    public ArrayList<Pill> getCarriedPills(){
+        return carriedPills;
+    }
+
 
 /*     public Medicine getCarriedMedication() {
         return this.getCarriedMedication;

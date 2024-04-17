@@ -4,6 +4,7 @@ import java.util.*;
 
 import entity.mobile.*;
 import entity.mobile.physcian.Nurses;
+import entity.mobile.physcian.Scooter;
 import entity.mobile.physcian.Van;
 import entity.stationary.*;
 
@@ -18,6 +19,12 @@ public class City {
     ArrayList<Order> orders;
     int width;
     int height;
+
+    private ArrayList <Patients> patientList = new ArrayList<>();
+    private ArrayList <Nurses> NurseList = new ArrayList<>();
+    private ArrayList <Stationary> stationaryList = new ArrayList<>();
+    private ArrayList <Van> vanList = new ArrayList<>();
+    private ArrayList <Scooter> scooterList = new ArrayList<>();
 
     /**
      * Constructs a city grid with the specified width and height.
@@ -375,5 +382,101 @@ public String viewMap(boolean showTraffic){
     return map.toString();
 }
 
+public int getWidth() {
+    return width;
+}
 
+public int getHeight() {
+    return height;
+}
+
+public ArrayList<Patients> getPatientList(){
+    return patientList;
+}
+
+public ArrayList<Nurses> getNurseList(){
+    return NurseList;
+}
+
+public ArrayList<Stationary> getStationaryList(){
+    return stationaryList;
+}
+
+public ArrayList<Scooter> getScooterList(){
+    return scooterList;
+}
+
+public ArrayList<Van> getVanList(){
+    return vanList;
+}
+
+// Method to randomly create buildings within the city area
+public void createRandomBuildings(int numBuildings, double portionOfCity) {
+    Random random = new Random();
+    int totalCells = width * height;
+    int cellsToFill = (int) (totalCells * portionOfCity);
+
+    for (int i = 0; i < numBuildings; i++) {
+        int buildingWidth = random.nextInt(width / 50) + 1;  // Random width (genişliğin 50de biri)
+        int buildingHeight = random.nextInt(height / 50) + 1;  // Random height (50de biri uzunluğun)
+
+        // Random position for the bottom-left corner of the building
+        int startX = random.nextInt(width - buildingWidth);
+        int startY = random.nextInt(height - buildingHeight);
+
+        // Ensure building does not overlap with existing buildings or roads
+        boolean isOverlap = false;
+        for (int x = startX; x < startX + buildingWidth; x++) {
+            for (int y = startY; y < startY + buildingHeight; y++) {
+                if (stationarys[x][y] != null) {
+                    isOverlap = true;
+                    break;
+                }
+            }
+        }
+
+        if (!isOverlap) {
+            // Build the stationary object for the building
+            Stationary building = new Stationary(startX, startY);
+            stationaryList.add(building);
+            // Place the building in the city grid
+            buildCustomeStationary(startX, startY, buildingWidth, buildingHeight, building);
+            // Update the remaining cells to fill
+            cellsToFill -= buildingWidth * buildingHeight;
+        }
+
+        // Stop if the desired portion of the city area is filled
+        if (cellsToFill <= 0) {
+            break;
+        }
+    }
+}
+
+public void createVansAndScooters() {
+    Random random = new Random();
+    
+    // Determine the number of vans and scooters based on city parameters
+    int numVans = 1 + width * height / 100; // Adjust the factor as needed. en az 1 olmalı
+    int numScooters = 1  + width * height / 50; // Adjust the factor as needed
+    
+    // Place vans randomly in the city
+    for (int i = 0; i < numVans; i++) {
+        int x = random.nextInt(width);
+        int y = random.nextInt(height);
+        String name = "v" + (i + 1); // Unique name for each van
+        Van van = new Van(name);
+        vanList.add(van);
+        setRoad(van, x, y);
+    }
+
+    // Place scooters randomly in the city
+    for (int i = 0; i < numScooters; i++) {
+        int x = random.nextInt(width);
+        int y = random.nextInt(height);
+        String name = "s" + (i + 1); // Unique name for each scooter
+        Scooter scooter = new Scooter(name);
+        scooterList.add(scooter);
+        setRoad(scooter, x, y);
+    }
+}
 }

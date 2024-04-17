@@ -5,7 +5,7 @@ import grid.Order;
 
 public class PeriodicSickness extends Sickness{
 
-    PeriodicSickness(int cycleFreq, Patients patient, Medicine ... neededMeds){
+    public PeriodicSickness(int cycleFreq, Patients patient, Medicine ... neededMeds){
         super(cycleFreq, patient, neededMeds);
     }
 

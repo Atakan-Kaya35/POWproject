@@ -18,6 +18,9 @@ public abstract class Sickness {
         }
         this.cycleFreq = cycleFrequency;
     }
-
+    public ArrayList<Medicine> getNeededMeds(){
+        return neededMeds;
+    }
+    
     public abstract boolean fullCycle();
 }

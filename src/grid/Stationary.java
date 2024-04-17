@@ -61,4 +61,8 @@ public class Stationary{
     public String initialString(){
         return this.inital;
     }
+
+    public String getName(){
+        return "";
+    }
 }
