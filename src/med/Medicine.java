@@ -11,6 +11,7 @@ public abstract class Medicine {
     protected String description;
     protected int[] consumeFreq = new int[3];
     protected int cyclesLeft = -1;
+    protected int purchaseCount = 0;
 
     Medicine(String name, String desciption){
         this.name = name;
@@ -32,20 +33,44 @@ public abstract class Medicine {
         }
     }
 
+    // Getter for ID
+    public static int getID() {
+        return ID;
+    }
+
+    // Getter for price
+    public double getPrice() {
+        return price;
+    }
+
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+
+    // Getter for description
+    public String getDescription() {
+        return description;
+    }
+
+    // Getter for consumeFreq
     public int[] getConsumeFreq() {
         return consumeFreq;
     }
 
-    public void setConsumeFreq(int[] consumeFreq) {
-        this.consumeFreq = consumeFreq;
-    }
-
+    // Getter for cyclesLeft
     public int getCyclesLeft() {
         return cyclesLeft;
     }
 
-    public void setCyclesOfTaking(int cyclesOfTaking) {
-        this.cyclesLeft = cyclesOfTaking;
+    // Getter for purchaseCount
+    public int getPurchaseCount() {
+        return purchaseCount;
+    }
+
+    // Setter for purchaseCount
+    public void setPurchaseCount(int purchaseCount) {
+        this.purchaseCount = purchaseCount;
     }
 
     /**
@@ -54,8 +79,5 @@ public abstract class Medicine {
      */
     public void setPrice(double price){
         this.price = price;
-    }
-    public static int getID() {
-        return ID;
     }
 }
