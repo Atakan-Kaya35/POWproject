@@ -158,12 +158,14 @@ public class App extends Application {
         for (int i = 0; i < purchaseList.size(); i++) {
             popupLayout.add(new Label(purchaseList.get(i).getName()), 0, i + 1);
             popupLayout.add(new Label(String.valueOf(purchaseList.get(i).getPurchaseCount())), 1, i + 1);
-            for (int i = 0; i < purchaseList.size(); i++) {
-                totalProduct += purchaseList.get(i).getPurchaseCount();
-                totalCost += purchaseList.get(i).getPurchaseCount() * purchaseList.get(i).getPrice();
-            }
-            popupLayout.add(new Label(String.format("$%.2f", totalProduct)), 2, i + 1);
+            double itemTotalPrice = purchaseList.get(i).getPurchaseCount() * purchaseList.get(i).getPrice();
+            popupLayout.add(new Label(String.format("$%.2f", itemTotalPrice)), 2, i + 1);
             
+        }
+
+        for (int i = 0; i < purchaseList.size(); i++) {
+            totalProduct += purchaseList.get(i).getPurchaseCount();
+            totalCost += purchaseList.get(i).getPurchaseCount() * purchaseList.get(i).getPrice();
         }
 
         // Add total
