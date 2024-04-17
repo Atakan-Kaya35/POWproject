@@ -114,7 +114,7 @@ public class City {
         Set<Road> closed = new HashSet<>();
 
         // Add start Road to open list
-        open.add(mobile.getCurrentRoad()); 
+        open.add(mobile.getContainedIn()); 
 
         // clarify the end road
         Road endRoad = roads[stationary.getCoordinates()[0]][stationary.getCoordinates()[1]];

@@ -24,6 +24,10 @@ public abstract class Mobile extends Entity {
         this.containedIn = containedIn;
     }
 
+    public Road getContainedIn(){
+        return containedIn;
+    }
+
     public void receiveOrder(){
 
     }
