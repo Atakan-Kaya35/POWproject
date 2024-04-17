@@ -1,3 +1,4 @@
+package DiagnosisTest;
 /**
  * This is a Question class.
  * Consists some questions to detect the possible disease for recommendation

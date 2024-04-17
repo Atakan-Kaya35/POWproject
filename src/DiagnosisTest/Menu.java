@@ -1,3 +1,4 @@
+package DiagnosisTest;
 /**
  * This is Menu class.
  * It shows initial page of the test

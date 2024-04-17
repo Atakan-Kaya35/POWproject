@@ -1,3 +1,4 @@
+package DiagnosisTest;
 /**
  * This is a Diagnosis Test Main class. It creates main frame and calls relevant claseses.
  */

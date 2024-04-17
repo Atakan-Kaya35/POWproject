@@ -1,3 +1,4 @@
+package DiagnosisTest;
 /**
  * It is a Solution class
  * It contains same possible solutions

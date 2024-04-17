@@ -1,5 +1,10 @@
 import med.*;
+import DiagnosisTest.*;
+import DiagnosisTest.Menu;
+import javax.swing.*;
+import java.awt.event.*;
 import javafx.application.Application;
+import javafx.embed.swing.SwingNode;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -12,6 +17,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.ArrayList;
+import javafx.application.Platform;
+
+
 
 public class App extends Application {
 
@@ -123,6 +131,37 @@ public class App extends Application {
 
         QDTNextButton.setOnAction(e -> {
             primaryStage.setScene(yesNoQuestPage);
+        });
+
+        QDTNextButton2.setOnAction(e -> {
+            JFrame menuFrame = new Menu();
+            menuFrame.setTitle("Pills on Wheels");
+            menuFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            menuFrame.setVisible(true);
+            // You can add Swing components to frame here
+            
+            // Create a SwingNode to embed the JFrame into JavaFX
+            SwingNode swingNode = new SwingNode();
+            swingNode.setContent((JComponent) menuFrame.getContentPane());
+            
+            // Create a JavaFX pane to hold the SwingNode
+            StackPane javaFxPane = new StackPane(swingNode);
+            
+            // Create a new stage for the pop-up
+            Stage popupStage = new Stage();
+            popupStage.initModality(Modality.APPLICATION_MODAL);
+            popupStage.setTitle("Popup");
+            
+            // Set the scene with the JavaFX pane
+            popupStage.setScene(new Scene(javaFxPane, 400, 300));
+            
+            // Show the pop-up
+            popupStage.show();
+            
+            // Set the size of the frame
+            menuFrame.setSize(300, 200);
+            // Make the frame visible
+            menuFrame.setVisible(true);
         });
 
         pillsButton.setOnAction(e -> {

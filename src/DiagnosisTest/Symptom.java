@@ -1,3 +1,4 @@
+package DiagnosisTest;
 /**
  * This is a Symptom class
  * It contains possible symptoms

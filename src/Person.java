@@ -6,7 +6,8 @@ public class Person {
     int age;
     int height;
     int weight;
-    public Person(String name, String adress, int age, int height, int weight){
+    String occupation;
+    public Person(String name, String adress, int age, int height, int weight, String occupation){
         counter++;
         this.ID = counter;
         this.name = name;
@@ -14,5 +15,6 @@ public class Person {
         this.age = age;
         this.weight = weight;
         this.weight = weight;
+        this.occupation = occupation;
     }
 }
