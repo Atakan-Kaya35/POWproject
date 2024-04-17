@@ -2,10 +2,16 @@ package entity.mobile.physcian;
 import java.util.ArrayList;
 
 import entity.mobile.Mobile;
+import grid.Road;
 import med.Medicine;
 
 public class Nurses extends Mobile {
     
+<<<<<<< Updated upstream
+=======
+    protected ArrayList<Serum> serumBaggage = new ArrayList<>();
+    protected ArrayList<Pill> pillBaggage = new ArrayList<>();
+>>>>>>> Stashed changes
     protected ArrayList<Medicine> baggage = new ArrayList<Medicine>();
     protected String name;
 
@@ -50,5 +56,12 @@ public class Nurses extends Mobile {
         }
         return result;
     }
+<<<<<<< Updated upstream
+    
+    
+    
+    
+=======
+>>>>>>> Stashed changes
     
 }

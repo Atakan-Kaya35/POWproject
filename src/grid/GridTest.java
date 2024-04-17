@@ -14,7 +14,7 @@ public class GridTest {
         Mobile a = new Van("mert");
         city.setRoad(a, 0,0);
         Mobile v = new Van("atakanisko");
-        city.setRoad(a, 0,0);
+       city.setRoad(a, 0,0);
         Stationary b = new Stationary(9,9);
         city.buildCustomeStationary(9,9, 1,1, b);     //We already passed the coordinates of stationary by using "b". Not need!!!!!!!!!!?
         Stationary Z = new Stationary(0,1);

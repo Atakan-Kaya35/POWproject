@@ -24,6 +24,15 @@ public abstract class Mobile extends Entity {
         this.containedIn = containedIn;
     }
 
+<<<<<<< Updated upstream
+    public Road getContainedIn() {
+        return this.containedIn;
+=======
+    public Road getContainedIn(){
+        return containedIn;
+>>>>>>> Stashed changes
+    }
+
     public void receiveOrder(){
 
     }

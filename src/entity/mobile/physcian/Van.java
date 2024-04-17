@@ -33,6 +33,11 @@ public class Van extends Nurses {
     public int [][] createRoad()
     {
         int[][] road = new int[12][2]; ////This will be determined by A* algorithm.(not hardcode)
+<<<<<<< Updated upstream
+        
+
+        City city = new City(12, 12);
+=======
         road[0][0] = 105;
         road[0][1] = 55;
         road[1][0] = 105;
@@ -59,6 +64,7 @@ public class Van extends Nurses {
         road[11][1] = 455;
 
         City city = new City(10, 10);
+>>>>>>> Stashed changes
         
         city.setRoad(this, x,y);
         Stationary b = new Stationary(9,9);
@@ -70,6 +76,19 @@ public class Van extends Nurses {
         city.getRoad(10, 5).setTraffic(newTraffic);
 
 
+<<<<<<< Updated upstream
+        List<Road> d = city.findPath((Van)this, b);
+        System.out.println(city.viewMap(false));
+
+
+        
+        int base = 50;
+        for(int i = 0; i<12; i++){
+                road[i][0] = base*(city.wholeWay.get(i).get(0));
+                road[i][1] = base*(city.wholeWay.get(i).get(1));
+        } 
+
+=======
         List<Road> d = city.findPath((Nurses)this, b);
         System.out.println(city.viewMap(false));
 
@@ -84,6 +103,7 @@ public class Van extends Nurses {
                 road[i][1] = base + base*(city.wholeWay.get(i).get(1));
         } 
 
+>>>>>>> Stashed changes
         return road;
     }
 
