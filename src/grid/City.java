@@ -2,7 +2,6 @@ package grid;
 
 import java.util.*;
 
-import com.mysql.cj.x.protobuf.MysqlxDatatypes.Array;
 
 import entity.mobile.*;
 import entity.mobile.physcian.Nurses;
@@ -108,13 +107,13 @@ public class City {
      * @param stationary The stationary entity.
      * @return The list of roads representing the shortest path.
      */
-    public List<Road> findPath(Nurses mobile, Stationary stationary){
+    public List<Road> findPath(Van mobile, Stationary stationary){
         // Create open and closed lists
         List<Road> open = new ArrayList<>();
         Set<Road> closed = new HashSet<>();
 
         // Add start Road to open list
-        open.add(mobile.getCurrentRoad()); 
+        open.add(mobile.getContainedIn());  
 
         // clarify the end road
         Road endRoad = roads[stationary.getCoordinates()[0]][stationary.getCoordinates()[1]];

@@ -2,6 +2,7 @@ package entity.mobile.physcian;
 import java.util.ArrayList;
 
 import entity.mobile.Mobile;
+import grid.Road;
 import med.Medicine;
 
 public class Nurses extends Mobile {
@@ -50,5 +51,9 @@ public class Nurses extends Mobile {
         }
         return result;
     }
+    
+    
+    
+    
     
 }
