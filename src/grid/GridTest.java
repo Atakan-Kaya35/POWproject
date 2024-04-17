@@ -29,7 +29,7 @@ public class GridTest {
         System.out.println("a");
         for (int i = 0; i< city.wholeWay.size(); i++) {
             for(int j=0; j<2;j++){
-                System.out.println(i+ " " + j);
+                System.out.println(city.wholeWay.get(i)+ " " + city.wholeWay.get(i).get(j));
             }            
         } // bu a neden acaba...gercek bir gizem -> map printinin gerçekten bittiğini anlamak için bence :)
 
