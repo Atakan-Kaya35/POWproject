@@ -1,12 +1,21 @@
+import med.*;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class App extends Application {
+
+    //buttons
     @FXML
     private Button loginButton;
 
@@ -34,14 +43,20 @@ public class App extends Application {
     @FXML
     private Button QDTNextButton;
 
-    //pop up will be opened and show recomendation
+    //TODO pop up will be opened and show recomendation
     @FXML
     private Button QDTNextButton2;
 
     @FXML
     private Button pillsButton;
 
-    private Stage primaryStage;
+    @FXML
+    private Button purchaseButton;
+
+    double totalCost;
+    int totalProduct;
+    ArrayList<Medicine> purchaseList = new ArrayList<Medicine>();
+
     private Scene logInPage, signInOccupationPage, signInPage, homePage, pillsPage, personalInfoPage, ordersPage, currentOrdersPage,
     quickDiagnosisPage, yesNoQuestPage, symptomsPage, homePageForOthers, personalInfoPageForOthers, deliveriesPage, currentDeliveryPage; 
     
@@ -114,7 +129,57 @@ public class App extends Application {
             primaryStage.setScene(pillsPage);
         });
 
+        purchaseButton.setOnAction(e -> {
+            openPurchasePopup();
+            totalCost = 0;
+            totalProduct = 0;
+        });
+
         primaryStage.show();
+    }
+
+    private void openPurchasePopup() {
+        Stage popupStage = new Stage();
+        popupStage.initModality(Modality.APPLICATION_MODAL); // Modal dialog olarak ayarlanır, arka plana tıklanamaz.
+        popupStage.setTitle("Purchase");
+
+        GridPane popupLayout = new GridPane();
+        popupLayout.setPadding(new Insets(10));
+        popupLayout.setVgap(10);
+        popupLayout.setHgap(10);
+        //TODO Alışveriş içeriğini göstercek şekilde düzenle
+
+        // Add headers
+        popupLayout.add(new Label("Medication"), 0, 0);
+        popupLayout.add(new Label("Quantity"), 1, 0);
+        popupLayout.add(new Label("Price"), 2, 0);
+
+        // Add purchase details
+        for (int i = 0; i < purchaseList.size(); i++) {
+            popupLayout.add(new Label(purchaseList.get(i).getName()), 0, i + 1);
+            popupLayout.add(new Label(String.valueOf(purchaseList.get(i).getPurchaseCount())), 1, i + 1);
+            for (int i = 0; i < purchaseList.size(); i++) {
+                totalProduct += purchaseList.get(i).getPurchaseCount();
+                totalCost += purchaseList.get(i).getPurchaseCount() * purchaseList.get(i).getPrice();
+            }
+            popupLayout.add(new Label(String.format("$%.2f", totalProduct)), 2, i + 1);
+            
+        }
+
+        // Add total
+        Label totalLabel = new Label("Total:");
+        totalLabel.setStyle("-fx-font-weight: bold;");
+        popupLayout.add(totalLabel, 1, purchaseList.size() + 1);
+        popupLayout.add(new Label(String.format("$%.2f", totalCost)), 2, purchaseList.size() + 1);
+
+        Button closeButton = new Button("Close");
+        closeButton.setOnAction(e -> popupStage.close());
+
+        popupLayout.add(closeButton, 2, purchaseList.size() + 2);
+
+        Scene popupScene = new Scene(popupLayout, 400, 300);
+        popupStage.setScene(popupScene);
+        popupStage.showAndWait();
     }
 
     public static void main(String[] args) {
