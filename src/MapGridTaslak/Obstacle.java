@@ -1,3 +1,4 @@
+package MapGridTaslak;
 import javax.swing.*;
 import java.awt.*;
 
