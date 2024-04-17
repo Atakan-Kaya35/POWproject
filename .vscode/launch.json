@@ -9,6 +9,13 @@
             "name": "GridTest",
             "request": "launch",
             "mainClass": "grid.GridTest",
+            "projectName": "POWproject_260a5a5f"
+        },
+        {
+            "type": "java",
+            "name": "GridTest",
+            "request": "launch",
+            "mainClass": "grid.GridTest",
             "projectName": "POWproject_a0dc385e"
         },
         {

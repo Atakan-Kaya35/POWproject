@@ -2,6 +2,8 @@ package grid;
 
 import java.util.*;
 
+import com.mysql.cj.x.protobuf.MysqlxDatatypes.Array;
+
 import entity.mobile.*;
 import entity.mobile.physcian.Nurses;
 import entity.mobile.physcian.Van;
@@ -16,6 +18,7 @@ public class City {
     Mobile[][] mobiles;
     Stationary[][] stationarys;
     ArrayList<Order> orders;
+    public ArrayList<ArrayList<Integer>> wholeWay = new ArrayList<ArrayList<Integer>>();
     int width;
     int height;
 
@@ -292,7 +295,12 @@ public String viewMap(boolean showTraffic){
             if( roads[i][j] != null){
                 // displaying vehicle
                 if(roads[i][j].getContained() == null){
-                    if(roads[i][j].getWasCrossed()) primaryRow.append(" 0 ");
+                    if(roads[i][j].getWasCrossed()){
+                        int current = wholeWay.size();
+                        wholeWay.add(new ArrayList<Integer>() );
+                        wholeWay.get(current).add(i);
+                        wholeWay.get(current).add(j);
+                    } 
                     else primaryRow.append(" . ");
                 }
                 else if(roads[i][j].getContained() instanceof Van){
@@ -335,6 +343,7 @@ public String viewMap(boolean showTraffic){
                     else{
                         // not show traffic
                         secondaryRow.append(" | ");
+                        
                     }
                 }
                 else{

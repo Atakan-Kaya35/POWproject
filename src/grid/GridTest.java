@@ -9,7 +9,7 @@ import entity.mobile.physcian.Van;
 
 public class GridTest {
     public static void main(String[] args) {
-
+        
         City city = new City(10, 10);
         Mobile a = new Van("mert");
         city.setRoad(a, 0,0);
@@ -26,7 +26,12 @@ public class GridTest {
 
         List<Road> d = city.findPath((Nurses)a, b);
         System.out.println(city.viewMap(false));
-        System.out.println("a"); // bu a neden acaba...gercek bir gizem -> map printinin gerçekten bittiğini anlamak için bence :)
+        System.out.println("a");
+        for (int i = 0; i< city.wholeWay.size(); i++) {
+            for(int j=0; j<2;j++){
+                System.out.println(i+ " " + j);
+            }            
+        } // bu a neden acaba...gercek bir gizem -> map printinin gerçekten bittiğini anlamak için bence :)
 
         //Mutlulukkk a* a kurban olim
     }
