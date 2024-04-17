@@ -47,13 +47,13 @@ public class Van
         road[11][0] = 255;
         road[11][1] = 455;
 
-       /*  //TODO HATALI KOD
+        //TODO HATALI KOD
         int base = 50;
         for(int i = 0; i<12; i++){
             for(int j = 0; j<2; j++){
                 road[i][j] = base + ((i+j)*50);
             }
-        } */
+        } 
 
         return road;
     }

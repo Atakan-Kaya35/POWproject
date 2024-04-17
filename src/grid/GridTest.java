@@ -10,7 +10,7 @@ import entity.mobile.physcian.Van;
 public class GridTest {
     public static void main(String[] args) {
         
-        City city = new City(10, 10);
+        City city = new City(12, 12);
         Mobile a = new Van("mert");
         city.setRoad(a, 0,0);
         Mobile v = new Van("atakanisko");
