@@ -70,11 +70,11 @@ public class GridPanel extends JComponent
     {
         public void actionPerformed(ActionEvent event)
         {
-            if(van.getCurrentRoad() < 11) //This will be determined by A* algorithm.(not hardcode)
+            if(van.getCurrentRoad() < 20) //This will be determined by A* algorithm.(not hardcode)
             {
                 moveVan();
                 repaint();
-                if(van.getCurrentRoad() == 11)
+                if(van.getCurrentRoad() == 20)
                 {
                     System.out.println("VAN REACHED TO TARGET!");
                     gridFrame.dispose();

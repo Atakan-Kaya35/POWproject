@@ -2,10 +2,6 @@ package grid;
 
 import java.util.*;
 
-<<<<<<< Updated upstream
-=======
-import com.mysql.cj.x.protobuf.MysqlxDatatypes.Array;
->>>>>>> Stashed changes
 
 import entity.mobile.*;
 import entity.mobile.physcian.Nurses;
@@ -117,7 +113,7 @@ public class City {
         Set<Road> closed = new HashSet<>();
 
         // Add start Road to open list
-        open.add(mobile.getContainedIn()); 
+        open.add(mobile.getContainedIn());  
 
         // clarify the end road
         Road endRoad = roads[stationary.getCoordinates()[0]][stationary.getCoordinates()[1]];

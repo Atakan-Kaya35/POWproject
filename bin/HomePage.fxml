@@ -7,6 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -144,7 +145,7 @@
       <Pane layoutX="-2.0" layoutY="113.0" prefHeight="57.0" prefWidth="1923.0" style="-fx-background-color: #94ACFF;" />
       <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="13.0" layoutY="4.0">
          <image>
-            <Image url="@4.png" />
+            <Image url="@../../../cs%20hw/POW/images/4.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="83.0" fitWidth="92.0" layoutX="10.0" layoutY="314.0">

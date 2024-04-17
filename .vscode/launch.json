@@ -9,20 +9,6 @@
             "name": "TaslakMain",
             "request": "launch",
             "mainClass": "MapGridTaslak.TaslakMain",
-            "projectName": "POWproject_a0dc385e"
-        },
-        {
-            "type": "java",
-            "name": "TaslakMain",
-            "request": "launch",
-            "mainClass": "MapGridTaslak.TaslakMain",
-            "projectName": "POWproject_cea29b99"
-        },
-        {
-            "type": "java",
-            "name": "TaslakMain",
-            "request": "launch",
-            "mainClass": "MapGridTaslak.TaslakMain",
             "projectName": "POWproject_260a5a5f"
         },
         {
@@ -30,37 +16,6 @@
             "name": "GridTest",
             "request": "launch",
             "mainClass": "grid.GridTest",
-<<<<<<< Updated upstream
-=======
-            "projectName": "POWproject_dafeafeb"
-        },
-        {
-            "type": "java",
-            "name": "Simulation",
-            "request": "launch",
-            "mainClass": "Simulation.Simulation",
-            "projectName": "POWproject_dafeafeb"
-        },
-        {
-            "type": "java",
-            "name": "TaslakMain",
-            "request": "launch",
-            "mainClass": "MapGridTaslak.TaslakMain",
-            "projectName": "POWproject_dafeafeb"
-        },
-        {
-            "type": "java",
-            "name": "TaslakMain",
-            "request": "launch",
-            "mainClass": "MapGridTaslak.TaslakMain",
-            "projectName": "POWproject_260a5a5f"
-        },
-        {
-            "type": "java",
-            "name": "GridTest",
-            "request": "launch",
-            "mainClass": "grid.GridTest",
->>>>>>> Stashed changes
             "projectName": "POWproject_260a5a5f"
         },
         {
