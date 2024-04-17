@@ -28,9 +28,9 @@ public class GridTest {
         System.out.println(city.viewMap(false));
         System.out.println("a");
         for (int i = 0; i< city.wholeWay.size(); i++) {
-            for(int j=0; j<2;j++){
-                System.out.println(city.wholeWay.get(i)+ " " + city.wholeWay.get(i).get(j));
-            }            
+            
+                System.out.println(city.wholeWay.get(i).get(0)+ " " + city.wholeWay.get(i).get(1));
+                        
         } // bu a neden acaba...gercek bir gizem -> map printinin gerçekten bittiğini anlamak için bence :)
 
         //Mutlulukkk a* a kurban olim
