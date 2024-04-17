@@ -9,6 +9,13 @@
             "name": "TaslakMain",
             "request": "launch",
             "mainClass": "MapGridTaslak.TaslakMain",
+            "projectName": "POWproject_a0dc385e"
+        },
+        {
+            "type": "java",
+            "name": "TaslakMain",
+            "request": "launch",
+            "mainClass": "MapGridTaslak.TaslakMain",
             "projectName": "POWproject_cea29b99"
         },
         {
