@@ -6,10 +6,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HomePage",
+            "request": "launch",
+            "mainClass": "HomePage",
+            "projectName": "POWproject_260a5a5f"
+        },
+        {
+            "type": "java",
+            "name": "OrdersPage",
+            "request": "launch",
+            "mainClass": "OrdersPage",
+            "projectName": "POWproject_260a5a5f"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
             "vmArgs": "--module-path javafx-sdk-22/lib --add-modules javafx.controls,javafx.fxml"
-        },
+        }
     ]
 }
