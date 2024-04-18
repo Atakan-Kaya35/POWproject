@@ -12,6 +12,10 @@ public class Nurses extends Mobile {
     protected ArrayList<Medicine> baggage = new ArrayList<Medicine>();
     protected String name;
 
+    public Nurses(){
+        
+    }
+
     Nurses(String name){
         this.name = name;
 

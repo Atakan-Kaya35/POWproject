@@ -1,8 +1,23 @@
+import med.*;
+import DiagnosisTest.*;
+import DiagnosisTest.Menu;
+import entity.mobile.physcian.Nurses;
+import entity.mobile.physcian.Van;
+import entity.mobile.physcian.Scooter;
+import entity.stationary.*;
+import javax.swing.*;
+import java.awt.event.*;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -11,13 +26,13 @@ public class App extends Application {
     private Button loginButton;
 
     @FXML
-    private Button signInButton;
+    private Button signUpButton;
 
     @FXML
-    private Button signInButton2;
+    private Button signUPButton2;
 
     @FXML
-    private Button signInButton3;
+    private Button signUPButton3;
 
     @FXML
     private Button homePageButton;
@@ -42,6 +57,40 @@ public class App extends Application {
     private Button pillsButton;
 
     private Stage primaryStage;
+    @FXML
+    private Button purchaseButton;
+
+    @FXML
+    private TextField userNameLSignUpTextField;
+
+    @FXML
+    private TextField passwordSignUpTextField;
+
+    @FXML
+    private TextField nameLogInTextField;
+
+    @FXML
+    private TextField userNameLogInTextField;
+
+    @FXML
+    private TextField ageSignUpTextField;
+
+    @FXML
+    private TextField weightSignUpTextField;
+
+    @FXML
+    private TextField heightSignUpTextField;
+
+    @FXML
+    private TextField addressSignUpTextField;
+
+    @FXML
+    ComboBox<String> comboBox = new ComboBox<>();
+
+    double totalCost;
+    int totalProduct;
+    ArrayList<Medicine> purchaseList = new ArrayList<Medicine>();
+
     private Scene logInPage, signInOccupationPage, signInPage, homePage, pillsPage, personalInfoPage, ordersPage, currentOrdersPage,
     quickDiagnosisPage, yesNoQuestPage, symptomsPage, homePageForOthers, personalInfoPageForOthers, deliveriesPage, currentDeliveryPage; 
     
@@ -52,6 +101,7 @@ public class App extends Application {
         logInPage = new Scene(fxmlLogIn.load(),1080,720);
         primaryStage.setScene(logInPage);
         
+        comboBox.getItems().addAll("Customer", "Nurse", "Scooter", "Van");
 
         FXMLLoader fxmlHome = new FXMLLoader(App.class.getResource("HomePage.fxml"));
         homePage = new Scene(fxmlHome.load(),1080,720);
@@ -71,21 +121,48 @@ public class App extends Application {
         FXMLLoader fxmlPills = new FXMLLoader(App.class.getResource("PillsPage.fxml"));
         pillsPage = new Scene(fxmlPills.load(),1080,720);
 
-        //sign in
-        signInButton.setOnAction(e -> {
+        //sign up
+        signUpButton.setOnAction(e -> {
             primaryStage.setScene(signInOccupationPage);
-        }); 
+            String selected = comboBox.getSelectionModel().getSelectedItem();
+            if(selected.equals("Customer")){
+                Patients customer = new Patients();
+            }
+            else if(selected.equals("Nurse")){
+                Nurses nurse = new Nurses();
+            }
+            else if(selected.equals("Scooter")){
+                Scooter scooter = new Scooter();
+            }
+            else if(selected.equals("Van")){
+                Van van = new Van();
+            }
 
-        signInButton2.setOnAction(e -> {
-            primaryStage.setScene(signInPage);
-        }); 
+            signUPButton2.setOnAction(ee -> {
+                primaryStage.setScene(signInPage);
+
+                User.setUserName(userNameLSignUpTextField.getText());
+                User.setPassword(passwordSignUpTextField.getText());
+                User.setName(nameLogInTextField.getText());
+                User.setAge(ageSignUpTextField.getText());
+                User.setAge(ageSignUpTextField.getText());
+                User.setWeight(weightSignUpTextField.getText());
+                User.setHeight(heightSignUpTextField.getText());
+                User.setHeight(addressSignUpTextField.getText());
+
+                //enter home page
+                loginButton.setOnAction(eee -> {
+                    primaryStage.setScene(homePage);
+                }); 
+            }); 
+        });
 
         //enter home page
         loginButton.setOnAction(e -> {
             primaryStage.setScene(homePage);
         }); 
 
-        signInButton3.setOnAction(e -> {
+        signUPButton3.setOnAction(e -> {
             primaryStage.setScene(homePage);
         }); 
 

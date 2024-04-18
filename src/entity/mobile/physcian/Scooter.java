@@ -9,6 +9,9 @@ public class Scooter extends Nurses {
     
     final protected int speed = 5;
 
+    public Scooter(){
+        super("");
+    }
     public Scooter(String name){
         super(name);
     }
