@@ -6,53 +6,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "TaslakMain",
-            "request": "launch",
-            "mainClass": "MapGridTaslak.TaslakMain",
-            "projectName": "POWproject_260a5a5f"
-        },
-        {
-            "type": "java",
-            "name": "GridTest",
-            "request": "launch",
-            "mainClass": "grid.GridTest",
-            "projectName": "POWproject_260a5a5f"
-        },
-        {
-            "type": "java",
-            "name": "GridTest",
-            "request": "launch",
-            "mainClass": "grid.GridTest",
-            "projectName": "POWproject_a0dc385e"
-        },
-        {
-            "type": "java",
-            "name": "CurrentDeliveries",
-            "request": "launch",
-            "mainClass": "CurrentDeliveries",
-            "projectName": "POWproject_a0dc385e"
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "POWproject_a0dc385e",
-            "vmArgs": "--module-path javafx-sdk-22/lib --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "HomePageForOthers",
-            "request": "launch",
-            "mainClass": "HomePageForOthers",
-            "projectName": "POWproject_a0dc385e"
-        },
-        {
-            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
             "vmArgs": "--module-path javafx-sdk-22/lib --add-modules javafx.controls,javafx.fxml"
-        }
+        },
     ]
 }

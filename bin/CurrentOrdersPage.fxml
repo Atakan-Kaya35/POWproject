@@ -14,9 +14,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CurrentOrdersPage">
+<AnchorPane maxHeight="1000" maxWidth="1000" minHeight="1000" minWidth="1000" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CurrentOrdersPage">
    <children>
-      <TextField layoutX="896.0" layoutY="28.0" prefHeight="54.0" prefWidth="366.0" promptText="search for medicine..." style="-fx-border-color: grey;">
+      <TextField layoutX="1000.0" layoutY="28.0" prefHeight="54.0" prefWidth="1.0" promptText="a" style="-fx-border-color: grey;">
          <font>
             <Font size="24.0" />
          </font></TextField>
@@ -144,7 +144,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane layoutX="-2.0" layoutY="113.0" prefHeight="57.0" prefWidth="1923.0" style="-fx-background-color: #94ACFF;" />
+      <Pane layoutX="-2.0" layoutY="113.0" prefHeight="57.0" prefWidth="100.0" style="-fx-background-color: #94ACFF;" />
       <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="13.0" layoutY="4.0">
          <image>
             <Image url="@../../../cs%20hw/POW/images/4.png" />
