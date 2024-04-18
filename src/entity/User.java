@@ -1,14 +1,21 @@
 package entity;
 
-public abstract class User {
+public class User {
     protected String name;
     protected String userName;
     protected String address;
+    protected String password;
     protected int weight;
     protected int height;
     protected int age;
 
-    
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getName() {
         return name;
     }

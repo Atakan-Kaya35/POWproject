@@ -5,6 +5,7 @@ import entity.mobile.physcian.Nurses;
 import entity.mobile.physcian.Van;
 import entity.mobile.physcian.Scooter;
 import entity.stationary.*;
+import entity.*;
 import javax.swing.*;
 import java.awt.event.*;
 import javafx.application.Application;
@@ -20,6 +21,7 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.util.*;
 
 public class App extends Application {
     @FXML
@@ -125,30 +127,31 @@ public class App extends Application {
         signUpButton.setOnAction(e -> {
             primaryStage.setScene(signInOccupationPage);
             String selected = comboBox.getSelectionModel().getSelectedItem();
+            User user = new User(); 
             if(selected.equals("Customer")){
-                Patients customer = new Patients();
+                user = new Patients();
             }
             else if(selected.equals("Nurse")){
-                Nurses nurse = new Nurses();
+                user = new Nurses();
             }
             else if(selected.equals("Scooter")){
-                Scooter scooter = new Scooter();
+                user = new Scooter();
             }
             else if(selected.equals("Van")){
-                Van van = new Van();
+                user = new Van();
             }
 
             signUPButton2.setOnAction(ee -> {
                 primaryStage.setScene(signInPage);
 
-                User.setUserName(userNameLSignUpTextField.getText());
-                User.setPassword(passwordSignUpTextField.getText());
-                User.setName(nameLogInTextField.getText());
-                User.setAge(ageSignUpTextField.getText());
-                User.setAge(ageSignUpTextField.getText());
-                User.setWeight(weightSignUpTextField.getText());
-                User.setHeight(heightSignUpTextField.getText());
-                User.setHeight(addressSignUpTextField.getText());
+                user.setUserName(userNameLSignUpTextField.getText());
+                user.setPassword(passwordSignUpTextField.getText());
+                user.setName(nameLogInTextField.getText());
+                user.setAge(Integer.parseInt(ageSignUpTextField.getText()));
+                user.setAge(Integer.parseInt(ageSignUpTextField.getText()));
+                user.setWeight(Integer.parseInt(weightSignUpTextField.getText()));
+                user.setHeight(Integer.parseInt(heightSignUpTextField.getText()));
+                user.setHeight(Integer.parseInt(addressSignUpTextField.getText()));
 
                 //enter home page
                 loginButton.setOnAction(eee -> {
