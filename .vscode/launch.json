@@ -6,10 +6,52 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PersonalInformationForOthers",
+            "request": "launch",
+            "mainClass": "PersonalInformationForOthers",
+            "projectName": "POWproject_260a5a5f"
+        },
+        {
+            "type": "java",
+            "name": "HomePageForOthers",
+            "request": "launch",
+            "mainClass": "HomePageForOthers",
+            "projectName": "POWproject_260a5a5f"
+        },
+        {
+            "type": "java",
+            "name": "CurrentDeliveries",
+            "request": "launch",
+            "mainClass": "CurrentDeliveries",
+            "projectName": "POWproject_260a5a5f"
+        },
+        {
+            "type": "java",
+            "name": "TaslakMain",
+            "request": "launch",
+            "mainClass": "MapGridTaslak.TaslakMain",
+            "projectName": "POWproject_260a5a5f"
+        },
+        {
+            "type": "java",
+            "name": "HomePage",
+            "request": "launch",
+            "mainClass": "HomePage",
+            "projectName": "POWproject_260a5a5f"
+        },
+        {
+            "type": "java",
+            "name": "OrdersPage",
+            "request": "launch",
+            "mainClass": "OrdersPage",
+            "projectName": "POWproject_260a5a5f"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
             "vmArgs": "--module-path javafx-sdk-22/lib --add-modules javafx.controls,javafx.fxml"
-        },
+        }
     ]
 }

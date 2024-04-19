@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -10,64 +15,64 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePage">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePage">
    <children>
       
-      <TextField layoutX="896.0" layoutY="28.0" prefHeight="54.0" prefWidth="366.0" promptText="search for medicine..." style="-fx-border-color: grey;">
+      <TextField layoutX="417.0" layoutY="22.0" prefHeight="32.0" prefWidth="189.0" promptText="search for medicine..." style="-fx-border-color: grey;">
          <font>
-            <Font size="24.0" />
+            <Font size="14.0" />
          </font></TextField>
-      <Pane layoutX="104.0" layoutY="168.0" prefHeight="902.0" prefWidth="299.0" style="-fx-background-color: #94ACFF; -fx-border-color: black;">
+      <Pane layoutX="57.0" layoutY="92.0" prefHeight="631.0" prefWidth="179.0" style="-fx-background-color: #94ACFF; -fx-border-color: black;">
          <children>
-            <Label layoutX="45.0" layoutY="32.0" prefHeight="47.0" prefWidth="191.0" text="Sinan Sonlu">
+            <Label layoutX="5.0" layoutY="14.0" prefHeight="53.0" prefWidth="125.0" text="Sinan Sonlu">
                <font>
-                  <Font name="System Bold" size="36.0" />
+                  <Font name="System Bold" size="21.0" />
                </font>
             </Label>
-            <Label layoutX="38.0" layoutY="95.0" text="Age: ">
+            <Label layoutX="10.0" layoutY="78.0" text="Age: ">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="37.0" layoutY="139.0" text="Weight: ">
+            <Label layoutX="8.0" layoutY="116.0" text="Weight: ">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="39.0" layoutY="177.0" text="Height: ">
+            <Label layoutX="10.0" layoutY="151.0" text="Height: ">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="185.0" layoutY="95.0" prefHeight="38.0" prefWidth="43.0" text="25">
+            <Label layoutX="109.0" layoutY="73.0" prefHeight="38.0" prefWidth="43.0" text="25">
                <font>
-                  <Font size="24.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="169.0" layoutY="177.0" text="185 cm">
+            <Label layoutX="95.0" layoutY="151.0" text="185 cm">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="176.0" layoutY="133.0" text="72 kg">
+            <Label layoutX="104.0" layoutY="116.0" text="72 kg">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Pane layoutX="11.0" layoutY="696.0" prefHeight="201.0" prefWidth="274.0" style="-fx-background-color: white; -fx-border-color: black;">
+            <Pane layoutX="8.0" layoutY="469.0" prefHeight="155.0" prefWidth="164.0" style="-fx-background-color: white; -fx-border-color: black;">
                <children>
-                  <Label layoutX="96.0" layoutY="20.0" prefHeight="34.0" prefWidth="125.0" text="Remainder">
+                  <Label layoutX="47.0" layoutY="13.0" prefHeight="34.0" prefWidth="125.0" text="Remainder">
                      <font>
-                        <Font name="System Bold" size="22.0" />
+                        <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Text layoutX="14.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Should Take:" wrappingWidth="179.18061071535652">
+                  <Text layoutX="6.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Should Take:" wrappingWidth="179.18061071535652">
                      <font>
-                        <Font size="20.0" />
+                        <Font size="17.0" />
                      </font>
                   </Text>
-                  <Text layoutX="21.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B-12 Vit at 10 a.m. Parol at 10 a.m.and 10 p.m." wrappingWidth="176.8840789794922" />
-                  <ImageView fitHeight="65.0" fitWidth="66.0" layoutX="16.0" layoutY="5.0">
+                  <Text layoutX="7.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B-12 Vit at 10 a.m. Parol at 10 a.m.and 10 p.m." wrappingWidth="148.0" />
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0">
                      <image>
                         <Image url="@../../../cs%20hw/POW/images/Adsız%20tasarım-3.png" />
                      </image>
@@ -76,53 +81,45 @@
             </Pane>
          </children>
       </Pane>
-      <Pane layoutX="1578.0" layoutY="160.0" prefHeight="924.0" prefWidth="347.0" style="-fx-background-color: #94ACFF; -fx-border-color: black;">
+      <Pane layoutX="847.0" layoutY="92.0" prefHeight="631.0" prefWidth="233.0" style="-fx-background-color: #94ACFF; -fx-border-color: black;">
          <children>
-            <Pane layoutX="22.0" layoutY="9.0" prefHeight="375.0" prefWidth="309.0" style="-fx-background-color: white; -fx-border-color: black;">
+            <Pane layoutX="13.0" layoutY="9.0" prefHeight="201.0" prefWidth="207.0" style="-fx-background-color: white; -fx-border-color: black;">
                <children>
-                  <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="12.0" layoutY="12.0">
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="24.0">
                      <image>
                         <Image url="@../../../cs%20hw/POW/images/sepet.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="87.0" layoutY="31.0" text="MY PHARMACY CART">
+                  <Label layoutX="56.0" layoutY="22.0" prefHeight="27.0" prefWidth="148.0" text="MY PHARMACY CART">
                      <font>
-                        <Font size="22.0" />
+                        <Font size="14.0" />
                      </font>
                   </Label>
                </children></Pane>
-            <Pane layoutX="22.0" layoutY="417.0" prefHeight="90.0" prefWidth="312.0" style="-fx-background-color: white; -fx-border-color: black;">
+            <Pane layoutX="14.0" layoutY="216.0" prefHeight="80.0" prefWidth="207.0" style="-fx-background-color: white; -fx-border-color: black;">
                <children>
-                  <Label layoutX="2.0" layoutY="5.0" text="Total Cost:">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="6.0" layoutY="46.0" text="Total Product:">
-                     <font>
-                        <Font size="22.0" />
-                     </font>
-                  </Label>
+                  <Label layoutX="14.0" layoutY="16.0" prefHeight="17.0" prefWidth="82.0" text="Total Cost:" />
+                  <Label layoutX="14.0" layoutY="46.0" text="Total Product:" />
                   <Label layoutX="184.0" layoutY="8.0" text="\$">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <Label layoutX="171.0" layoutY="46.0" text="0">
+                  <Label layoutX="159.0" layoutY="39.0" text="0">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <Label layoutX="171.0" layoutY="9.0" text="0">
+                  <Label layoutX="158.0" layoutY="9.0" prefHeight="32.0" prefWidth="25.0" text="0">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Label>
                </children>
             </Pane>
-            <Pane layoutX="22.0" layoutY="525.0" prefHeight="90.0" prefWidth="312.0" style="-fx-background-color: white; -fx-border-color: black;">
+            <Pane layoutX="14.0" layoutY="307.0" prefHeight="53.0" prefWidth="207.0" style="-fx-background-color: white; -fx-border-color: black;">
                <children>
-                  <ImageView fitHeight="57.0" fitWidth="60.0" layoutX="217.0" layoutY="16.0">
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="161.0" layoutY="11.0">
                      <image>
                         <Image url="@../../../cs%20hw/POW/images/shoppingCart.png" />
                      </image>
@@ -132,49 +129,45 @@
                         <Font size="22.0" />
                      </font>
                   </Label>
-                  <Button layoutX="37.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: #94ACFF;" text="PURCHASE">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Button>
+                  <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="125.0" style="-fx-background-color: #94ACFF;" text="PURCHASE" />
                </children>
             </Pane>
          </children>
       </Pane>
-      <Pane layoutX="-2.0" layoutY="113.0" prefHeight="57.0" prefWidth="1923.0" style="-fx-background-color: #94ACFF;" />
-      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="13.0" layoutY="4.0">
+      <Pane layoutY="65.0" prefHeight="27.0" prefWidth="1080.0" style="-fx-background-color: #94ACFF;" />
+      <ImageView fitHeight="51.0" fitWidth="51.0">
          <image>
             <Image url="@4.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="83.0" fitWidth="92.0" layoutX="10.0" layoutY="314.0">
-         <image>
-            <Image url="@../../../cs%20hw/POW/images/6.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="76.0" fitWidth="73.0" layoutX="18.0" layoutY="214.0">
+      <ImageView fitHeight="38.0" fitWidth="43.0" layoutX="4.0" layoutY="120.0">
          <image>
             <Image url="@../../../cs%20hw/POW/images/5.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="95.0" fitWidth="84.0" layoutX="13.0" layoutY="414.0">
-         <image>
-            <Image url="@../../../cs%20hw/POW/images/7.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="84.0" fitWidth="84.0" layoutX="13.0" layoutY="873.0">
+      <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="4.0" layoutY="616.0">
          <image>
             <Image url="@../../../cs%20hw/POW/images/8.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="80.0" fitWidth="84.0" layoutX="14.0" layoutY="979.0">
-         <image>
-            <Image url="@../../../cs%20hw/POW/images/9.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="95.0" fitWidth="96.0" layoutX="789.0" layoutY="11.0">
+      <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="366.0" layoutY="16.0">
          <image>
             <Image url="@../../../cs%20hw/POW/images/buyutec.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="43.0" layoutX="4.0" layoutY="164.0">
+         <image>
+            <Image url="@../../../cs%20hw/POW/images/5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="43.0" layoutX="4.0" layoutY="202.0">
+         <image>
+            <Image url="@../../../cs%20hw/POW/images/5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="4.0" layoutY="667.0">
+         <image>
+            <Image url="@../../../cs%20hw/POW/images/8.png" />
          </image>
       </ImageView>
    </children>
