@@ -1,23 +1,44 @@
+import med.*;
+import DiagnosisTest.*;
+import DiagnosisTest.Menu;
+import entity.mobile.physcian.Nurses;
+import entity.mobile.physcian.Van;
+import entity.mobile.physcian.Scooter;
+import entity.stationary.*;
+import entity.*;
+import javax.swing.*;
+import java.awt.event.*;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.util.*;
 
 public class App extends Application {
+
+    @FXML
+    private Label nameLabel;
+
     @FXML
     private Button loginButton;
 
     @FXML
-    private Button signInButton;
+    private Button signUpButton;
 
     @FXML
-    private Button signInButton2;
+    private Button signUPButton2;
 
     @FXML
-    private Button signInButton3;
+    private Button signUPButton3;
 
     @FXML
     private Button homePageButton;
@@ -42,16 +63,53 @@ public class App extends Application {
     private Button pillsButton;
 
     private Stage primaryStage;
+    @FXML
+    private Button purchaseButton;
+
+    @FXML
+    private TextField userNameLSignUpTextField;
+
+    @FXML
+    private TextField passwordSignUpTextField;
+
+    @FXML
+    private TextField nameLogInTextField;
+
+    @FXML
+    private TextField userNameLogInTextField;
+
+    @FXML
+    private TextField ageSignUpTextField;
+
+    @FXML
+    private TextField weightSignUpTextField;
+
+    @FXML
+    private TextField heightSignUpTextField;
+
+    @FXML
+    private TextField addressSignUpTextField;
+
+    @FXML
+    ComboBox<String> comboBox = new ComboBox<>();
+
+    double totalCost;
+    int totalProduct;
+    ArrayList<Medicine> purchaseList = new ArrayList<Medicine>();
+
     private Scene logInPage, signInOccupationPage, signInPage, homePage, pillsPage, personalInfoPage, ordersPage, currentOrdersPage,
     quickDiagnosisPage, yesNoQuestPage, symptomsPage, homePageForOthers, personalInfoPageForOthers, deliveriesPage, currentDeliveryPage; 
     
 
     public void start(Stage primaryStage) throws IOException{
 
+        nameLabel.setText("tarçın");
+
         FXMLLoader fxmlLogIn = new FXMLLoader(App.class.getResource("Merhaba.fxml"));
         logInPage = new Scene(fxmlLogIn.load(),1080,720);
         primaryStage.setScene(logInPage);
         
+        comboBox.getItems().addAll("Customer", "Nurse", "Scooter", "Van");
 
         FXMLLoader fxmlHome = new FXMLLoader(App.class.getResource("HomePage.fxml"));
         homePage = new Scene(fxmlHome.load(),1080,720);
@@ -71,21 +129,49 @@ public class App extends Application {
         FXMLLoader fxmlPills = new FXMLLoader(App.class.getResource("PillsPage.fxml"));
         pillsPage = new Scene(fxmlPills.load(),1080,720);
 
-        //sign in
-        signInButton.setOnAction(e -> {
+        //sign up
+        signUpButton.setOnAction(e -> {
             primaryStage.setScene(signInOccupationPage);
-        }); 
+            String selected = comboBox.getSelectionModel().getSelectedItem();
+            User user; 
+            if(selected.equals("Customer")){
+                user = new Patients();
+            }
+            else if(selected.equals("Nurse")){
+                user = new Nurses();
+            }
+            else if(selected.equals("Scooter")){
+                user = new Scooter();
+            }
+            else{
+                user = new Van();
+            }
 
-        signInButton2.setOnAction(e -> {
-            primaryStage.setScene(signInPage);
-        }); 
+            signUPButton2.setOnAction(ee -> {
+                primaryStage.setScene(signInPage);
+
+                user.setUserName(userNameLSignUpTextField.getText());
+                user.setPassword(passwordSignUpTextField.getText());
+                user.setName(nameLogInTextField.getText());
+                user.setAge(Integer.parseInt(ageSignUpTextField.getText()));
+                user.setAge(Integer.parseInt(ageSignUpTextField.getText()));
+                user.setWeight(Integer.parseInt(weightSignUpTextField.getText()));
+                user.setHeight(Integer.parseInt(heightSignUpTextField.getText()));
+                user.setHeight(Integer.parseInt(addressSignUpTextField.getText()));
+
+                //enter home page
+                loginButton.setOnAction(eee -> {
+                    primaryStage.setScene(homePage);
+                }); 
+            }); 
+        });
 
         //enter home page
         loginButton.setOnAction(e -> {
             primaryStage.setScene(homePage);
         }); 
 
-        signInButton3.setOnAction(e -> {
+        signUPButton3.setOnAction(e -> {
             primaryStage.setScene(homePage);
         }); 
 

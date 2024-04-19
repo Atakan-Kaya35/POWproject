@@ -8,7 +8,7 @@ public class CurrentOrdersPage extends Application{
     public void start(Stage primaryStage) throws IOException{
        
         FXMLLoader fxml = new FXMLLoader(CurrentOrdersPage.class.getResource("CurrentOrdersPage.fxml"));
-        Scene scene = new Scene(fxml.load(),1080,720);
+        Scene scene = new Scene(fxml.load(),100,100);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

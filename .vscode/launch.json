@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "POWproject_cea29b99"
+        },
+        {
+            "type": "java",
+            "name": "PersonalInformationForOthers",
+            "request": "launch",
+            "mainClass": "PersonalInformationForOthers",
+            "projectName": "POWproject_260a5a5f"
+        },
+        {
+            "type": "java",
+            "name": "HomePageForOthers",
+            "request": "launch",
+            "mainClass": "HomePageForOthers",
+            "projectName": "POWproject_260a5a5f"
+        },
+        {
+            "type": "java",
+            "name": "CurrentDeliveries",
+            "request": "launch",
+            "mainClass": "CurrentDeliveries",
+            "projectName": "POWproject_260a5a5f"
+        },
+        {
+            "type": "java",
             "name": "TaslakMain",
             "request": "launch",
             "mainClass": "MapGridTaslak.TaslakMain",
@@ -13,39 +41,17 @@
         },
         {
             "type": "java",
-            "name": "GridTest",
+            "name": "HomePage",
             "request": "launch",
-            "mainClass": "grid.GridTest",
+            "mainClass": "HomePage",
             "projectName": "POWproject_260a5a5f"
         },
         {
             "type": "java",
-            "name": "GridTest",
+            "name": "OrdersPage",
             "request": "launch",
-            "mainClass": "grid.GridTest",
-            "projectName": "POWproject_a0dc385e"
-        },
-        {
-            "type": "java",
-            "name": "CurrentDeliveries",
-            "request": "launch",
-            "mainClass": "CurrentDeliveries",
-            "projectName": "POWproject_a0dc385e"
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "App",
-            "projectName": "POWproject_a0dc385e",
-            "vmArgs": "--module-path javafx-sdk-22/lib --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
-            "name": "HomePageForOthers",
-            "request": "launch",
-            "mainClass": "HomePageForOthers",
-            "projectName": "POWproject_a0dc385e"
+            "mainClass": "OrdersPage",
+            "projectName": "POWproject_260a5a5f"
         },
         {
             "type": "java",

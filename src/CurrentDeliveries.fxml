@@ -299,11 +299,11 @@
             </ImageView> -->
          </children>
       </Pane>
-      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="-19.0" layoutY="-54.0">
+      <!-- <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="-19.0" layoutY="-54.0">
          <image>
             <Image url="@4.png" />
          </image>
-      </ImageView>
+      </ImageView> -->
       <!-- <ImageView fitHeight="73.0" fitWidth="72.0" layoutX="18.0" layoutY="314.0">
          <image>
             <Image url="@iconmap.png" />

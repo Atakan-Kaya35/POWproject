@@ -1,11 +1,12 @@
 package grid;
 
 import java.util.*;
-import entity.stationary.*;
+import entity.*;
 
 
 
-public class Stationary{
+
+public class Stationary extends entity.User{
     
     int[] coordinates;
     Road[] surroundingRoads;

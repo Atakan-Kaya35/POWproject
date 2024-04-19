@@ -8,11 +8,11 @@ public class CurrentDeliveries extends Application{
     public void start(Stage primaryStage) throws IOException{
         
         FXMLLoader fxml = new FXMLLoader(CurrentDeliveries.class.getResource("CurrentDeliveries.fxml"));
-        Scene scene = new Scene(fxml.load(),1080,720);
+        Scene scene = new Scene(fxml.load(),1920,1080);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
     public static void main(String[] args) {
-        launch(args);
+        launch(args); 
     }
 }

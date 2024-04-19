@@ -7,8 +7,14 @@ import med.Medicine;
 
 public class Nurses extends Mobile {
     
+    protected ArrayList<Serum> serumBaggage = new ArrayList<>();
+    protected ArrayList<Pill> pillBaggage = new ArrayList<>();
     protected ArrayList<Medicine> baggage = new ArrayList<Medicine>();
     protected String name;
+
+    public Nurses(){
+        
+    }
 
     Nurses(String name){
         this.name = name;

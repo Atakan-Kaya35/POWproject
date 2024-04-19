@@ -20,6 +20,9 @@ public class Van extends Nurses {
     private int y;
     private int currentRoad;
 
+    public Van(){
+        super("");
+    }
 
     public Van(String name, int x, int y)
     {

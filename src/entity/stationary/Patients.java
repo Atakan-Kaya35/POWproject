@@ -10,9 +10,12 @@ public class Patients extends grid.Stationary {
     protected ArrayList<Medicine> cart = new ArrayList<Medicine>();
     protected ArrayList<Sickness> sicknesses = new ArrayList<Sickness>();
 
-    protected String name;
+
     protected City city;
 
+    public Patients(){
+        super(0, 0);
+    }
     public Patients(String name, int x, int y, City city){
         super(x, y);
         this.name = name;

@@ -1,11 +1,12 @@
 package entity.mobile;
 
 import grid.*;
-import entity.Entity;
+import entity.*;
+import entity.User;
 import entity.mobile.physcian.Nurses;
 import grid.*;
 
-public abstract class Mobile extends Entity {
+public abstract class Mobile extends User {
 
     int[] coordinates;
     // maybe ArrayList for more complicated city arrangements in the future
