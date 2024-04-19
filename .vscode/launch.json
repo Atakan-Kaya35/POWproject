@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "POWproject_cea29b99"
+        },
+        {
+            "type": "java",
             "name": "PersonalInformationForOthers",
             "request": "launch",
             "mainClass": "PersonalInformationForOthers",

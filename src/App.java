@@ -24,6 +24,10 @@ import java.io.IOException;
 import java.util.*;
 
 public class App extends Application {
+
+    @FXML
+    private Label nameLabel;
+
     @FXML
     private Button loginButton;
 
@@ -98,6 +102,8 @@ public class App extends Application {
     
 
     public void start(Stage primaryStage) throws IOException{
+
+        nameLabel.setText("tarçın");
 
         FXMLLoader fxmlLogIn = new FXMLLoader(App.class.getResource("Merhaba.fxml"));
         logInPage = new Scene(fxmlLogIn.load(),1080,720);
