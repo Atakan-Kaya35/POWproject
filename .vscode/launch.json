@@ -8,6 +8,20 @@
             "type": "java",
             "name": "App",
             "request": "launch",
+            "mainClass": "com.example/com.example.App",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "CurrentDeliveries",
+            "request": "launch",
+            "mainClass": "CurrentDeliveries",
+            "projectName": "POWproject_a0dc385e"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
             "mainClass": "App",
             "projectName": "POWproject_cea29b99"
         },
@@ -59,6 +73,14 @@
             "request": "launch",
             "mainClass": "${file}",
             "vmArgs": "--module-path javafx-sdk-22/lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "POWproject_a0dc385e",
+            "vmArgs": "--module-path \"C:/Users/ataka/Desktop/POWproject/javafx-sdk-22/lib\" --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }
