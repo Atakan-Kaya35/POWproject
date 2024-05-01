@@ -257,7 +257,7 @@ public class SimMethods {
         }
 
         // Assign order to the least occupied nurse
-        if (leastOccupiedNurse != null) {
+        /*if (leastOccupiedNurse != null) {
             leastOccupiedNurse.receiveOrder(new Order(patient, neededMeds));
         } else {
             // If all nurses have maximum baggage size, choose any nurse
@@ -303,6 +303,8 @@ public class SimMethods {
 
         // Simulate traffic (optional)
         // For simplicity, we won't implement traffic simulation in this example
+
+         */
     }
 }
 

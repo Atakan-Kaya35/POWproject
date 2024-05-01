@@ -16,7 +16,7 @@ public class Scooter extends Nurses {
         super(name);
     }
 
-    @Override
+    //@Override
     public void receiveOrder(grid.Order order){
         this.pillBaggage = order.getCarriedPills();
 
@@ -26,17 +26,17 @@ public class Scooter extends Nurses {
      * Give all medicines stored in baggage
      * @return baggage
      */
-    public ArrayList<Pill> getBaggage() {
+    /*public ArrayList<Pill> getBaggage() {
         return pillBaggage;
-    }
+    }*/
 
     /**
      * Nurse added new medine to baggage
      * @param x added medicine
      */
-    public void addToBaggage(ArrayList<Pill> x) {
+    /*public void addToBaggage(ArrayList<Pill> x) {
         this.pillBaggage = x;
-    }
+    }*/
     /**
      * When nurse deliver medicine to patient baggage update its current medicines
      * @param x given medicine 

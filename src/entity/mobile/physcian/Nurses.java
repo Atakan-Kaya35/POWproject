@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import entity.mobile.Mobile;
 import grid.Road;
 import med.Medicine;
+import med.Pill;
+import med.Serum;
 
 public class Nurses extends Mobile {
     
