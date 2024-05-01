@@ -4,6 +4,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CurrentDeliveries",
+            "request": "launch",
+            "mainClass": "CurrentDeliveries",
+            "projectName": "POWproject_cea29b99"
+        },
+        {
+            "type": "java",
             "name": "HomePage",
             "request": "launch",
             "mainClass": "HomePage",
