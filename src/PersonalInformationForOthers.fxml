@@ -9,38 +9,37 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePage">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePage">
    <children>
 
-      <Pane layoutX="104.0" layoutY="168.0" prefHeight="237.0" prefWidth="299.0" style="-fx-background-color: #FFBD59; -fx-border-color: black;">
+      <Pane layoutX="69.0" layoutY="112.0" prefHeight="167.0" prefWidth="207.0" style="-fx-background-color: #FFBD59; -fx-border-color: black;">
          <children>
-            <Label alignment="CENTER" layoutX="6.0" layoutY="25.0" prefHeight="55.0" prefWidth="285.0" text="Sude Özden">
+            <Label alignment="CENTER" layoutX="-2.0" layoutY="20.0" prefHeight="38.5" prefWidth="210.75" text="Sude Özden">
                <font>
-                  <Font name="System Bold" size="36.0" />
+                  <Font name="System Bold" size="22.5" />
                </font>
             </Label>
-            <Label layoutX="37.0" layoutY="139.0" text="Occupation:">
+            <Label layoutX="27.75" layoutY="97.5" text="Occupation:">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="181.0" layoutY="138.0" text="Nurse">
+            <Label layoutX="135.75" layoutY="96.75" text="Nurse">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
          </children>
       </Pane>
-      <Pane layoutX="1468.0" layoutY="160.0" prefHeight="924.0" prefWidth="457.0" style="-fx-background-color: #FFBD59; -fx-border-color: black;">
+      <Pane layoutX="775.0" layoutY="118.0" prefHeight="603.0" prefWidth="307.0" style="-fx-background-color: #FFBD59; -fx-border-color: black;">
          <children>
-            <Pane layoutX="22.0" layoutY="9.0" prefHeight="888.0" prefWidth="417.0" style="-fx-background-color: white; -fx-border-color: black;">
+            <Pane layoutX="5.0" layoutY="13.0" prefHeight="583.0" prefWidth="294.0" style="-fx-background-color: white; -fx-border-color: black;">
                <children>
-                  <Label layoutX="91.0" layoutY="31.0" text="Waiting Requests">
+                  <Label layoutX="68.25" layoutY="23.25" text="Waiting Requests">
                      <font>
-                        <Font size="22.0" />
+                        <Font size="20.25" />
                      </font>
                   </Label>
                   <ImageView fitHeight="81.0" fitWidth="76.0" layoutX="6.0" layoutY="9.0">
@@ -48,7 +47,7 @@
                         <Image url="@../../../cs%20hw/POW/images/Nurse%20Icon.png" />
                      </image>
                   </ImageView>
-                  <GridPane layoutX="40.0" layoutY="129.0" prefHeight="746.0" prefWidth="363.0">
+                  <GridPane layoutX="30.0" layoutY="97.5" prefHeight="442.5" prefWidth="272.25">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
@@ -72,37 +71,37 @@
                            <children>
                               <Label text="Name:">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Sinan Sonlu" GridPane.columnIndex="1">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Adress:" GridPane.rowIndex="1">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Bilkent University" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Request:" GridPane.rowIndex="2">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="A serum" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Button mnemonicParsing="false" style="-fx-background-color: #FFBD59;" text="Approve" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Button>
                            </children>
@@ -121,37 +120,37 @@
                            <children>
                               <Label text="Name:">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Burkay Tunçtürk" GridPane.columnIndex="1">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Adress:" GridPane.rowIndex="1">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Maltepe Mahallesi" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Request:" GridPane.rowIndex="2">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Two serums" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Button mnemonicParsing="false" style="-fx-background-color: #FFBD59;" text="Approve" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Button>
                            </children>
@@ -170,37 +169,37 @@
                            <children>
                               <Label text="Name:">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Atakan Kaya" GridPane.columnIndex="1">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Adress:" GridPane.rowIndex="1">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Ayrancı Mahallesi" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="Request:" GridPane.rowIndex="2">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Label text="A serum" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Label>
                               <Button mnemonicParsing="false" style="-fx-background-color: #FFBD59;" text="Approve" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="13.5" />
                                  </font>
                               </Button>
                            </children>
@@ -210,7 +209,7 @@
                </children></Pane>
          </children>
       </Pane>
-      <Pane layoutX="-2.0" layoutY="113.0" prefHeight="57.0" prefWidth="1923.0" style="-fx-background-color: #FFBD59;" />
+      <Pane layoutX="-1.5" layoutY="84.75" prefHeight="41.25" prefWidth="1080.0" style="-fx-background-color: #FFBD59;" />
       <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="13.0" layoutY="4.0">
          <image>
             <Image url="@../../../cs%20hw/POW/images/4.png" />
@@ -231,12 +230,12 @@
             <Image url="@../../../cs%20hw/POW/images/9.png" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" layoutX="515.0" layoutY="274.0" prefHeight="55.0" prefWidth="356.0" style="-fx-background-color: #FFBD59; -fx-border-color: black;" text="Personal Information">
+      <Label alignment="CENTER" layoutX="355.0" layoutY="188.0" prefHeight="55.0" prefWidth="356.0" style="-fx-background-color: #FFBD59; -fx-border-color: black;" text="Personal Information">
          <font>
-            <Font size="36.0" />
+            <Font size="22.5" />
          </font>
       </Label>
-      <GridPane layoutX="98.0" layoutY="469.0" prefHeight="375.0" prefWidth="889.0" style="-fx-border-color: black;">
+      <GridPane layoutX="292.0" layoutY="328.0" prefHeight="345.0" prefWidth="466.0" style="-fx-border-color: black;">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -250,47 +249,47 @@
          <children>
             <Label alignment="CENTER" prefHeight="37.0" prefWidth="444.0" text="Name:">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
             <Label alignment="CENTER" prefHeight="37.0" prefWidth="472.0" text="ID:" GridPane.rowIndex="1">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
             <Label alignment="CENTER" prefHeight="37.0" prefWidth="437.0" text="Occupation:" GridPane.rowIndex="2">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
             <Label alignment="CENTER" prefHeight="37.0" prefWidth="440.0" text="Address" GridPane.rowIndex="3">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
             <Label text="Sude Özden" GridPane.columnIndex="1">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
             <Label text="53" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
             <Label text="Nurse" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
             <Label text="Yenimahalle" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
-                  <Font size="24.0" />
+                  <Font size="18.0" />
                </font>
             </Label>
          </children>
       </GridPane>
-      <ImageView fitHeight="796.0" fitWidth="762.0" layoutX="868.0" layoutY="206.0">
+      <ImageView fitHeight="428.0" fitWidth="265.0" layoutX="23.0" layoutY="296.0">
          <image>
             <Image url="@../../../cs%20hw/POW/images/Nurse%20and%20Old%20Lady.png" />
          </image>

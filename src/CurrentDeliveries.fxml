@@ -193,7 +193,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane layoutX="-1.5" layoutY="84.75" prefHeight="41.25" prefWidth="1082.5" style="-fx-background-color: #FFBD59;" />
+      <Pane layoutX="-1.0" layoutY="85.0" prefHeight="42.0" prefWidth="1082.0" style="-fx-background-color: #FFBD59;" />
       <!-- <ImageView fitHeight="68.0" fitWidth="68.0" layoutX="9.75" layoutY="2.25">
          <image>
             <Image url="@4.png" />
