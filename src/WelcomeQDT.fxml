@@ -160,7 +160,7 @@
             <Image url="@../../../cs%20hw/POW/images/buyutec.png" />
          </image>
       </ImageView>
-      <Text fx:id="warningText" layoutX="277.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning: It is just provide a medical advice. For real results please contact with your doctor!" textAlignment="CENTER" wrappingWidth="532.3437887002787">
+      <Text layoutX="277.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning: It is just provide a medical advice. For real results please contact with your doctor!" textAlignment="CENTER" wrappingWidth="532.3437887002787">
          <font>
             <Font size="30.0" />
          </font>
